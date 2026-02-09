@@ -8,18 +8,22 @@
 </head>
 <body>
 
-<section id="hub" class="fade-section">
+<header class="landing">
     <h1>SilentHub</h1>
+    <p>Scroll down to explore</p>
+</header>
 
+<section id="hub" class="fade-section">
+    <!-- Discord Card -->
     <div class="card">
         <h2>💬 Discord</h2>
         <p>Join our community</p>
         <button onclick="window.open('https://discord.gg/NGEMSasjjG')">Join Discord</button>
     </div>
 
+    <!-- Scripts Card -->
     <div class="card">
-        <h2>📜 Our Scripts</h2>
-        <p>SilentHub Lagger</p>
+        <h2>📜 SilentHub Lagger</h2>
         <p>Powerful lagger by Silent</p>
         <pre id="lagger">loadstring(game:HttpGet("https://pastefy.app/9bSNQfhs/raw"))()</pre>
         <button onclick="copyText('lagger')">Copy</button>
