@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SilentHub</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0a0a, #1a0a2a);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+
+        h1 { color: #a855f7; font-size: 48px; }
+        h2 { color: #a855f7; }
+
+        .section {
+            background: #111;
+            padding: 30px;
+            border-radius: 16px;
+            margin: 40px auto;
+            max-width: 700px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px #a855f7;
+        }
+
+        button {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 12px;
+            background: #a855f7;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px #a855f7;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fade-in">SilentHub</h1>
+
+    <div class="section fade-in" style="animation-delay:0.2s">
+        <h2>💬 Discord</h2>
+        <button onclick="window.open('https://discord.gg/NGEMSasjjG')">Join Discord</button>
+    </div>
+
+    <div class="section fade-in" style="animation-delay:0.4s">
+        <h2>📜 Our Scripts</h2>
+        <button onclick="location.href='scripts.html'">View Scripts</button>
+    </div>
+</body>
+</html>
